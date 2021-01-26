@@ -17,6 +17,13 @@
 ### 安装
 > go get github.com/laixhe/goimg
 
+### docker安装
+```
+docker build -t goimg:1.0 .
+
+docker run -it -d -v /data/goimg/img:/img -p 8080:8080 --name goimg goimg:1.0
+```
+
 ### 获取图片
 > GET /9d32e3c40efb0b749270695d5f0afdfc
 
